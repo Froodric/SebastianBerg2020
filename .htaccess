@@ -1,17 +1,3 @@
-RewriteEngine on
-
-# remove html (to avoid duplicate content)
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.html [NC]
-RewriteRule ^ %1 [R=301,L]
-
-# rewrite html only if file exists
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{DOCUMENT_ROOT}/$1.html -f
-RewriteRule ^([^.]+)/?$ $1.html [L]
-
-
-RewriteRule ^welcome.*$ index.php?page=welcome [NC]
-
-#Alternate default index page
-DirectoryIndex hem.html
+RewriteEngine On
+RewriteRule ^index\.html$ / [R=301,L]
+RewriteRule ^(.*)/index\.html$ /$1/ [R=301,L]
