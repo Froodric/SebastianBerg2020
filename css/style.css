@@ -1,0 +1,187 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  background-color: black;
+  scroll-behavior: smooth;
+  background: url(../img/background.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.active {
+  color: #e52222;
+  font-size: 1.1rem;
+}
+
+.logotext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.secondarytext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  top: 15rem;
+}
+
+.image-container img {
+  width: 7%;
+  align-self: center;
+}
+
+.gallerygrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 25vw);
+  grid-gap: 5px;
+}
+
+.gallery {
+  background: black;
+  height: 100vh;
+  margin-top: 15rem;
+}
+
+.link-holder {
+  position: relative;
+  text-align: center;
+  top: 4%;
+}
+
+.gallerylinks {
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0px 40px;
+  transition: 0.2s ease-in-out;
+}
+
+.gallerylinks:hover {
+  font-size: 1.2rem;
+}
+
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+  padding: 10px 0px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.socialmedia {
+  margin: 0px -20px;
+}
+
+.logo {
+  width: 60px;
+  padding-left: 30px;
+  transition: 0.2s ease-in-out;
+}
+
+li {
+  padding: 25px 35px;
+  display: flex;
+  justify-content: center;
+  transition: 0.2s ease-in-out;
+}
+
+li:hover {
+  font-size: 1.1rem;
+}
+
+.logo:hover {
+  width: 70px;
+}
+
+#link {
+  padding: 0px 15px;
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1,
+li,
+ul,
+a {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+
+@media screen and (max-width: 990px) {
+  .gallerygrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 55vw);
+    grid-gap: 5px;
+  }
+
+  .link {
+    display: none;
+  }
+
+  .image-container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 715px) {
+  .link {
+    display: none;
+  }
+  li {
+    padding: 25px 25px;
+  }
+
+  .gallerygrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 55vw);
+    grid-gap: 5px;
+  }
+
+  .image-container {
+    display: none;
+  }
+}
