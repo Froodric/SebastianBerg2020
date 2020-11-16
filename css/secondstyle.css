@@ -22,7 +22,38 @@ body {
   font-size: 1.1rem;
 }
 
-.square {
+#square1 {
+  background-color: black;
+  width: 500px;
+  height: 750px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 6rem;
+  display: none;
+}
+
+#arrow {
+  transform: rotate(-90deg);
+  width: 8%;
+  position: relative;
+  top: 95px;
+  left: 20px;
+  z-index: 2;
+}
+
+#square2 {
+  background-color: black;
+  width: 500px;
+  height: 750px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 6rem;
+  display: none;
+}
+
+#square3 {
   background-color: black;
   width: 500px;
   height: 750px;
@@ -68,7 +99,7 @@ span {
   font-size: 2rem;
 }
 
-.img-container {
+#img-container {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -76,13 +107,13 @@ span {
   margin-top: 7rem;
 }
 
-.img-container img {
+#img-container img {
   width: 90%;
   padding: 0rem 1rem;
   transition: 0.2s ease-in-out;
 }
 
-.img-container img:hover {
+#img-container img:hover {
   width: 85%;
 }
 

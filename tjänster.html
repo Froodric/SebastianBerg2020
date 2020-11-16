@@ -38,7 +38,10 @@
   </header>
 
   <body>
-    <div class="square">
+    <div id="square1">
+      <a href="tjänster"
+        ><img id="arrow" src="/img/arrow-up-circle.svg" alt=""
+      /></a>
       <h1 id="headertext">PORTRÄTT</h1>
       <h1 id="paket">Paket 1: <span> 499kr</span></h1>
       <h1 id="subpaket">3 Digitala Bilder</h1>
@@ -50,13 +53,44 @@
         Vill du lägga till bilder på ditt paket? Det kostar 200kr/bild.
       </h1>
     </div>
-    <div class="img-container">
-      <a href="#"><img src="img/website/porträtt.png" alt="" /></a>
-      <a href="#"><img src="img/website/bröllop.png" alt="" /></a>
-      <a href="#"><img src="img/website/familj.png" alt="" /></a>
+    <div id="square2">
+      <a href="tjänster"><img id="arrow" src="/img/arrow-up-circle.svg" alt="" /></a>
+      <h1 id="headertext">BRÖLLOP</h1>
+      <h1 id="paket">Paket 1: <span> 499kr</span></h1>
+      <h1 id="subpaket">3 Digitala Bilder</h1>
+      <h1 id="paket">Paket 2: <span> 799kr</span></h1>
+      <h1 id="subpaket">5 Digitala Bilder</h1>
+      <h1 id="paket">Paket 3: <span>1099kr</span></h1>
+      <h1 id="subpaket">7 Digitala Bilder</h1>
+      <h1 id="merpaket">
+        Vill du lägga till bilder på ditt paket? Det kostar 200kr/bild.
+      </h1>
     </div>
-
-    <script src="js/script.js"></script>
+    <div id="square3">
+      <a href="tjänster"><img id="arrow" src="/img/arrow-up-circle.svg" alt="" /></a>
+      <h1 id="headertext">FAMILJ</h1>
+      <h1 id="paket">Paket 1: <span> 499kr</span></h1>
+      <h1 id="subpaket">3 Digitala Bilder</h1>
+      <h1 id="paket">Paket 2: <span> 799kr</span></h1>
+      <h1 id="subpaket">5 Digitala Bilder</h1>
+      <h1 id="paket">Paket 3: <span>1099kr</span></h1>
+      <h1 id="subpaket">7 Digitala Bilder</h1>
+      <h1 id="merpaket">
+        Vill du lägga till bilder på ditt paket? Det kostar 200kr/bild.
+      </h1>
+    </div>
+    <div id="img-container">
+      <a onclick="myFunction()" href="#"
+        ><img src="img/website/porträtt.png" alt=""
+      /></a>
+      <a onclick="myFunction1()" href="#"
+        ><img src="img/website/bröllop.png" alt=""
+      /></a>
+      <a onclick="myFunction2()" href="#"
+        ><img src="img/website/familj.png" alt=""
+      /></a>
+    </div>
     <script src="js/tjänster.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
