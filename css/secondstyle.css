@@ -22,6 +22,52 @@ body {
   font-size: 1.1rem;
 }
 
+.square {
+  background-color: black;
+  width: 500px;
+  height: 750px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 6rem;
+  display: none;
+}
+
+#merpaket {
+  text-align: center;
+  position: relative;
+  top: 40px;
+  margin-top: 5rem;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+#headertext {
+  text-align: center;
+  position: relative;
+  top: 40px;
+  font-size: 3rem;
+}
+#paket {
+  text-align: center;
+  position: relative;
+  top: 40px;
+  font-weight: 300;
+  font-size: 3rem;
+  padding: 2rem 0rem;
+}
+
+span {
+  font-weight: 600;
+}
+
+#subpaket {
+  text-align: center;
+  position: relative;
+  font-weight: 300;
+  font-size: 2rem;
+}
+
 .img-container {
   display: flex;
   flex-direction: row;
