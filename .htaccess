@@ -1,6 +1,8 @@
-Options +FollowSymLinks
-RewriteEngine On
-RewriteCond %{THE_REQUEST} /index.html HTTP [NC]
-RewriteRule (.*)index.html$ /$1 [R=301,L]
+RewriteEngine on
 
-DirectoryIndex hem.html
+
+RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+RewriteRule ^ /%1 [NC,L,R]
+
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^ %{REQUEST_URI}.html [NC,L]
