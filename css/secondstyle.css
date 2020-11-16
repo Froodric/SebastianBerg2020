@@ -31,12 +31,13 @@ body {
 }
 
 .img-container img {
+  width: 90%;
   padding: 0rem 1rem;
-  transition: 1s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .img-container img:hover {
-  width: 30%;
+  width: 85%;
 }
 
 nav {
