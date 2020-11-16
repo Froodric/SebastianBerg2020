@@ -12,3 +12,6 @@ RewriteRule ^([^.]+)/?$ $1.html [L]
 
 
 RewriteRule ^welcome.*$ index.php?page=welcome [NC]
+
+#Alternate default index page
+DirectoryIndex hem.html
