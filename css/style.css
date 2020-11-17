@@ -17,8 +17,6 @@ body {
   width: 100%;
 }
 
-
-
 .active {
   color: #e52222;
   font-size: 1.1rem;
@@ -64,7 +62,7 @@ body {
 .gallerygrid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 25vw);
+  grid-template-rows: repeat(4, 35vw);
   grid-gap: 5px;
 }
 
@@ -177,7 +175,7 @@ a {
   .gallerygrid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 55vw);
+    grid-template-rows: repeat(4, 65vw);
     grid-gap: 5px;
   }
 
@@ -247,7 +245,7 @@ a {
   .gallerygrid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 55vw);
+    grid-template-rows: repeat(4, 65vw);
     grid-gap: 5px;
   }
 
