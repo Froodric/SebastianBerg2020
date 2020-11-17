@@ -14,3 +14,11 @@ for (var i = 0; i < btnContainer.length; i++) {
     this.className += " active";
   });
 }
+window.ondragstart = function () {
+  return false;
+};
+
+const images = document.getElementsByTagName("img");
+for (let i = 0; i < images.length; i++) {
+  images[i].addEventListener("contextmenu", (event) => event.preventDefault());
+}
