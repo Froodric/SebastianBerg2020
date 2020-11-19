@@ -259,8 +259,29 @@ a {
   .link {
     display: none;
   }
+
+  .gallery {
+    background: black;
+    height: 100vh;
+    width: 100%;
+    margin-top: -5rem;
+  }
+
+  .gallerylinks {
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0px 10px;
+  }
+
+  .socialmedia {
+    display: none;
+    margin: 0px 0px;
+  }
   li {
-    padding: 25px 25px;
+    padding: 15px 25px;
   }
 
   .secondarytext {
