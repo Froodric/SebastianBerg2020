@@ -6,7 +6,6 @@
 }
 
 body {
-  height: 100vh;
   background-color: black;
   scroll-behavior: smooth;
   background-image: url(../img/background.jpg);
@@ -255,7 +254,7 @@ a {
   }
 }
 
-@media screen and (max-width: 295px) {
+@media screen and (max-width: 300px) {
   .link {
     display: none;
   }
@@ -280,8 +279,10 @@ a {
     display: none;
     margin: 0px 0px;
   }
+
   li {
     padding: 15px 25px;
+    display: none;
   }
 
   .secondarytext {
