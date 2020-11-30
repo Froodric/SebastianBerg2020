@@ -175,6 +175,27 @@ a {
   color: white;
 }
 
+@media screen and (max-width: 1280px) {
+  #square1 {
+    margin-top: -1rem;
+    display: none;
+  }
+
+  #square2 {
+    margin-top: -1rem;
+    display: none;
+  }
+
+  #square3 {
+    margin-top: -1rem;
+    display: none;
+  }
+
+  #merpaket {
+    top: -10px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   #img-container {
     display: flex;
