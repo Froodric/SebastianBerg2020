@@ -90,3 +90,13 @@ a {
   list-style: none;
   color: white;
 }
+
+@media screen and (max-width: 500px) {
+  .socialmedia {
+    display: none;
+  }
+
+  li {
+    display: none;
+  }
+}
