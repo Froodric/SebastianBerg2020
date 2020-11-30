@@ -16,6 +16,58 @@ body {
   width: 100%;
 }
 
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+  padding: 10px 0px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.logo {
+  width: 60px;
+  padding-left: 30px;
+  transition: 0.2s ease-in-out;
+}
+
+li {
+  padding: 25px 35px;
+  display: flex;
+  justify-content: center;
+  transition: 0.2s ease-in-out;
+}
+
+li:hover {
+  font-size: 1.1rem;
+}
+
+.logo:hover {
+  width: 70px;
+}
+
+#link {
+  padding: 0px 15px;
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1,
+li,
+ul,
+a {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+
 .active {
   color: #e52222;
   font-size: 1.1rem;
@@ -98,224 +150,50 @@ body {
   font-size: 1.2rem;
 }
 
-nav {
-  display: flex;
-  justify-content: space-evenly;
-  text-align: center;
-  align-items: center;
-  padding: 10px 0px;
-  font-weight: 600;
-  letter-spacing: 2px;
-}
-
 .socialmedia {
   margin: 0px -20px;
 }
 
-.logo {
-  width: 60px;
-  padding-left: 30px;
-  transition: 0.2s ease-in-out;
-}
-
-li {
-  padding: 25px 35px;
-  display: flex;
-  justify-content: center;
-  transition: 0.2s ease-in-out;
-}
-
-li:hover {
-  font-size: 1.1rem;
-}
-
-.logo:hover {
-  width: 70px;
-}
-
-#link {
-  padding: 0px 15px;
-  display: flex;
-  justify-content: center;
-}
-
-ul {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-h1,
-li,
-ul,
-a {
-  text-decoration: none;
-  list-style: none;
-  color: white;
-}
-
-@media screen and (max-width: 1025px) {
-  .image-container img {
-    width: 9%;
-    align-self: center;
-  }
-
-  .logotext {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10rem;
-    font-size: 5rem;
-    text-align: center;
-    margin-bottom: 0rem;
-  }
-}
-
-@media screen and (max-width: 990px) {
-  .gallerygrid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 65vw);
-    grid-gap: 5px;
-  }
-
+@media screen and (max-width: 768px) {
   .secondarytext {
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-    font-size: 1.2rem;
-    color: white;
-    margin-bottom: 22rem;
-    transform-origin: center;
-    margin-left: auto;
-    margin-right: auto;
+    width: 80%;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .secondarytext {
     width: 100%;
-  }
-
-  .logotext {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10rem;
-    font-size: 5rem;
-    text-align: center;
-    margin-bottom: 0rem;
-  }
-
-  .link {
-    display: none;
-  }
-
-  .image-container {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 715px) {
-  .link {
-    display: none;
-  }
-  li {
-    padding: 25px 25px;
-  }
-
-  .secondarytext {
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
     font-size: 1rem;
-    color: white;
-    margin-bottom: 22rem;
-    transform-origin: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
   }
 
   .logotext {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10rem;
-    font-size: 3rem;
-    text-align: center;
-    margin-bottom: 0rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
   }
 
-  .gallerygrid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 65vw);
-    grid-gap: 5px;
+  .socialmedia {
+    display: none;
   }
 
   .image-container {
     display: none;
   }
-}
 
-@media screen and (max-width: 300px) {
-  .link {
+  li {
     display: none;
+  }
+  .gallerygrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 70vw);
+    grid-gap: 5px;
   }
 
   .gallery {
     background: black;
     height: 100vh;
     width: 100%;
-    margin-top: -5rem;
-  }
-
-  .gallerylinks {
-    text-align: center;
-    display: inline-block;
-    margin-bottom: 2rem;
-    font-size: 1rem;
-    font-weight: 500;
-    padding: 0px 10px;
-  }
-
-  .socialmedia {
-    display: none;
-    margin: 0px 0px;
-  }
-
-  li {
-    padding: 15px 25px;
-    display: none;
-  }
-
-  .secondarytext {
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-    font-size: 0.6rem;
-    color: white;
-    margin-bottom: 22rem;
-    transform-origin: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-  }
-
-  .logotext {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10rem;
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 0rem;
-  }
-
-  .gallerygrid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 65vw);
-    grid-gap: 5px;
-  }
-
-  .image-container {
-    display: none;
+    margin-top: -11rem;
   }
 }
