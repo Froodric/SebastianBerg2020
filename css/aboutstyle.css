@@ -15,6 +15,7 @@ body {
   background-size: cover;
   height: 100vh;
   width: 100%;
+  overflow: hidden;
 }
 
 .active {
@@ -42,17 +43,42 @@ nav {
   transition: 0.2s ease-in-out;
 }
 
-.kontakt {
+.flexcontainer {
   display: flex;
-  justify-content: center;
   flex-direction: row;
-  align-items: center;
 }
 
-.kontakt img {
-  padding: 0rem 2rem;
-  margin-top: 5rem;
-  width: 30%;
+.bilder {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+}
+
+p {
+  color: white;
+  font-weight: 500;
+  font-size: 2rem;
+  position: relative;
+  top: -50px;
+}
+
+#titel {
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.bilder img {
+  width: 70%;
+  padding: 6rem 5rem;
+  border-radius: 50%;
+  transition: 0.2s ease-in-out;
+  filter: grayscale(100%);
+}
+
+.bilder img:hover {
+  filter: grayscale(0%);
 }
 
 li {
@@ -98,6 +124,27 @@ a {
     flex-direction: column;
     align-items: center;
   }
+  p {
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    position: relative;
+    top: 15px;
+  }
+
+  .bilder img {
+    width: 30%;
+    position: relative;
+    top: -5rem;
+    margin-bottom: -180px;
+    border-radius: 50%;
+    filter: grayscale(0%);
+  }
+
+  .flexcontainer {
+    display: flex;
+    flex-direction: column;
+  }
 
   .kontakt img {
     padding: 0rem 1rem;
@@ -111,6 +158,28 @@ a {
     display: none;
   }
 
+  p {
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    position: relative;
+    top: 15px;
+  }
+
+  .bilder img {
+    width: 40%;
+    position: relative;
+    top: -5rem;
+    margin-bottom: -180px;
+    border-radius: 50%;
+    filter: grayscale(0%);
+  }
+
+  .flexcontainer {
+    display: flex;
+    flex-direction: column;
+  }
+
   li {
     display: none;
   }
@@ -120,7 +189,6 @@ a {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    text-align: justify;
   }
 
   .kontakt img {
