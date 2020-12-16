@@ -231,15 +231,21 @@ span {
 
   #square1 {
     position: relative;
-    top: 200px;
+    top: 150px;
+    width: 390px;
+    height: 700px;
   }
   #square2 {
     position: relative;
-    top: 200px;
+    top: 150px;
+    width: 390px;
+    height: 700px;
   }
   #square3 {
     position: relative;
-    top: 200px;
+    top: 150px;
+    width: 390px;
+    height: 700px;
   }
 
   #img-container img:hover {
