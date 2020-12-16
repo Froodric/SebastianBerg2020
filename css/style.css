@@ -1,8 +1,10 @@
 * {
   font-family: "Montserrat", sans-serif;
+
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  color: white;
 }
 
 body {
@@ -16,31 +18,54 @@ body {
   width: 100%;
 }
 
-nav {
+.logo img {
+  width: 100%;
+}
+
+.navbar {
   display: flex;
-  justify-content: space-evenly;
-  text-align: center;
+  justify-content: space-between;
   align-items: center;
-  padding: 10px 0px;
+  padding: 1rem 5rem;
+}
+
+.navbar-mobile {
+  display: none;
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  list-style: none;
   font-weight: 600;
-  letter-spacing: 2px;
+  font-size: 0.9rem;
+  letter-spacing: 0x;
+  transition: 0.2s ease-in-out;
+}
+
+.navbar-links li:hover {
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.navbar-links-social img {
+  padding: 0.3rem;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  padding: 1rem;
+  display: block;
 }
 
 .logo {
   width: 60px;
   padding-left: 30px;
   transition: 0.2s ease-in-out;
-}
-
-li {
-  padding: 25px 35px;
-  display: flex;
-  justify-content: center;
-  transition: 0.2s ease-in-out;
-}
-
-li:hover {
-  font-size: 1.1rem;
 }
 
 .logo:hover {
@@ -53,24 +78,10 @@ li:hover {
   justify-content: center;
 }
 
-ul {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-h1,
-li,
-ul,
-a {
-  text-decoration: none;
-  list-style: none;
-  color: white;
-}
-
 .active {
-  color: #e52222;
+  color: #be2323;
   font-size: 1.1rem;
+  font-weight: 800;
 }
 
 .logotext {
@@ -88,7 +99,6 @@ a {
   justify-content: space-evenly;
   text-align: center;
   font-size: 1.2rem;
-  color: white;
   margin-bottom: 22rem;
   transform-origin: center;
   margin-left: auto;
@@ -150,10 +160,6 @@ a {
   font-size: 1.2rem;
 }
 
-.socialmedia {
-  margin: 0px -20px;
-}
-
 @media screen and (max-width: 768px) {
   .secondarytext {
     width: 80%;
@@ -167,12 +173,51 @@ a {
     font-size: 0.8rem;
   }
 
+  .navbar-mobile {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 5rem;
+    position: absolute;
+    left: 0rem;
+    background-color: black;
+    width: 25%;
+    height: 42%;
+    z-index: 1;
+    top: 0;
+  }
+
+  .gallerylinks {
+    margin: 0;
+    padding: 0;
+    display: block;
+    padding-bottom: 5px;
+  }
+
+  .gallery a {
+    text-decoration: none;
+  }
+
+  .logo {
+    position: relative;
+    margin-right: 25px;
+  }
+
+  .navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .logotext {
     font-size: 2.5rem;
     margin-bottom: -2rem;
   }
 
-  .socialmedia {
+  .navbar {
     display: none;
   }
 
@@ -180,14 +225,13 @@ a {
     display: none;
   }
 
-  li {
-    display: none;
-  }
   .gallerygrid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(9, 70vw);
     grid-gap: 5px;
+    position: relative;
+    top: 50px;
   }
 
   .gallery {
