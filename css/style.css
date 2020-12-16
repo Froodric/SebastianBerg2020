@@ -22,6 +22,10 @@ body {
   width: 100%;
 }
 
+.nav-button {
+  display: none;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -189,6 +193,7 @@ body {
     right: 25px;
     padding: 0;
     margin: 0;
+    display: block;
   }
 
   .navbar-mobile {
@@ -198,7 +203,7 @@ body {
     align-items: center;
     padding: 4rem 5rem;
     position: fixed;
-    left: 0rem;
+    left: -1rem;
     width: 25%;
     height: 42%;
     z-index: 1;
