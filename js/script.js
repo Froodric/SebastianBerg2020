@@ -24,16 +24,18 @@ for (let i = 0; i < images.length; i++) {
 }
 
 var IsOpen = false;
+var navbar = document.getElementById("navbar-mobile");
+var navbarBackground = document.getElementById("nav-background");
 
 function open_nav() {
-  document.getElementById("navbar-mobile").style.left = "-1rem";
-  document.getElementById("nav-background").style.left = "-1rem";
+  navbar.style.left = "-1rem";
+  navbarBackground.style.left = "-1rem";
   IsOpen = true;
 }
 
 function close_nav() {
-  document.getElementById("navbar-mobile").style.left = "-20rem";
-  document.getElementById("nav-background").style.left = "-20rem";
+  navbar.style.left = "-20rem";
+  navbarBackground.style.left = "-20rem";
   IsOpen = false;
 }
 
