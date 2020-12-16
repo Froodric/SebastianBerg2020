@@ -52,3 +52,15 @@ btn.addEventListener(
   },
   false
 );
+
+window.addEventListener(
+  "click",
+  function () {
+    if (IsOpen) {
+      close_nav();
+    } else {
+      close_nav();
+    }
+  },
+  true
+);
