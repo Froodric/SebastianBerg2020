@@ -26,17 +26,20 @@ for (let i = 0; i < images.length; i++) {
 var IsOpen = false;
 var navbar = document.getElementById("navbar-mobile");
 var navbarBackground = document.getElementById("nav-background");
+var WindowClickable = false;
 
 function open_nav() {
   navbar.style.left = "-1rem";
   navbarBackground.style.left = "-1rem";
   IsOpen = true;
+  WindowClickable = true;
 }
 
 function close_nav() {
   navbar.style.left = "-20rem";
   navbarBackground.style.left = "-20rem";
   IsOpen = false;
+  WindowClickable = false;
 }
 
 var btn = document.getElementById("nav-button");
@@ -56,7 +59,7 @@ btn.addEventListener(
 window.addEventListener(
   "click",
   function () {
-    if (IsOpen) {
+    if (WindowClickable) {
       close_nav();
     } else {
       close_nav();
