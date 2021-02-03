@@ -4,6 +4,8 @@
   padding: 0;
   scroll-behavior: smooth;
   color: white;
+
+  
 }
 
 body {
@@ -53,6 +55,7 @@ body {
 
 .navbar-links-social img {
   padding: 0.3rem;
+
 }
 
 .navbar-links li a {
@@ -95,6 +98,7 @@ body {
   position: relative;
   top: 100px;
   display: none;
+  
 }
 
 #square2 {
@@ -153,6 +157,7 @@ body {
   font-weight: 300;
   font-size: 3rem;
   padding: 2rem 0rem;
+  
 }
 
 span {
@@ -179,6 +184,7 @@ span {
   padding: 0rem 1rem;
   transition: 0.2s ease-in-out;
   align-self: auto;
+  
 }
 
 #img-container img:hover {

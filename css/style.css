@@ -109,6 +109,26 @@ body {
   animation-timing-function: ease-in-out; /* how the animation will behave */
 }
 
+
+
+
+@keyframes animatetext {
+  0% {
+    color: white;
+    transform: translateY(0px);
+  }
+
+  50% {
+    color: rgb(248, 83, 83);
+    transform: translateY(10px)
+  }
+
+  100% {
+    color: rgb(255, 255, 255);
+    transform: translateY(0px);
+  }
+}
+
 @keyframes slideIn {
   0% {
     transform: translateY(60px);
@@ -194,6 +214,19 @@ body {
   font-weight: 500;
   padding: 0px 40px;
   transition: 0.2s ease-in-out;
+}
+
+.news{
+  position: absolute;
+  right: 5rem;
+  text-align: center;
+  top: 5rem;
+  font-size: 3rem;
+  animation-name: animatetext;
+  animation-iteration-count: infinite;
+  animation-duration: 0.9s; /* the duration of the animation */
+  animation-timing-function: ease-in-out; /* how the animation will behave */
+
 }
 
 .gallerylinks:hover {
