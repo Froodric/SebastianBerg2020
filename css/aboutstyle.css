@@ -68,8 +68,16 @@ body {
 }
 
 .logo:hover {
-  width: 70px;
+  transform: scale(1.1);
 }
+
+.navbar-links-social img {
+  transition: 0.1s ease-in-out;
+}
+
+ .navbar-links-social img:hover  {
+  transform: scale(1.2);
+ }
 
 p {
   color: white;
