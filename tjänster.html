@@ -15,20 +15,21 @@
 
       gtag("config", "UA-160723606-2");
     </script>
-    <script src="js/tjänster.js"></script>
     <link rel="icon" href="favicon.png" />
     <meta property="og:image" content="img/thumbnail.com" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sebastian Berg Foto</title>
-    <link rel="stylesheet" href="css/secondstyle.css" />
+    <link rel="stylesheet" href="css/style2.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
   </head>
   <nav class="navbar">
-    <a href="/"><div class="logo"><img src="LOGO.svg" alt="" /></div></a>
+    <a href="/">
+      <div class="logo"><img src="LOGO.svg" alt="" /></div>
+    </a>
     <div class="navbar-links">
       <ul>
         <li><a class="link" href="/">HEM</a></li>
@@ -51,7 +52,9 @@
   <img id="nav-button" src="img/navbutton.png" alt="" />
   <div id="nav-background">
     <nav id="navbar-mobile">
-      <a href="/"><div class="logo"><img src="LOGO.svg" alt="" /></div></a>
+      <a href="/">
+        <div class="logo"><img src="LOGO.svg" alt="" /></div>
+      </a>
       <div class="navbar-links">
         <ul>
           <li><a class="link" href="/">HEM</a></li>
@@ -72,62 +75,123 @@
       </div>
     </nav>
   </div>
+
   <body>
-    <div id="square1">
-      <a href="tjänster"
-        ><img id="arrow" src="img/arrow-up-circle.svg" alt=""
-      /></a>
-      <h1 id="headertext">PORTRÄTT</h1>
-      <h1 id="paket">Paket 1: <span> 499kr</span></h1>
-      <h1 id="subpaket">3 Digitala Bilder</h1>
-      <h1 id="paket">Paket 2: <span> 799kr</span></h1>
-      <h1 id="subpaket">5 Digitala Bilder</h1>
-      <h1 id="paket">Paket 3: <span>1099kr</span></h1>
-      <h1 id="subpaket">7 Digitala Bilder</h1>
-      <h1 id="merpaket">
-        Vill du lägga till bilder på ditt paket? Det kostar 200kr/bild.
-      </h1>
-    </div>
-    <div id="square2">
-      <a href="tjänster"
-        ><img id="arrow" src="img/arrow-up-circle.svg" alt=""
-      /></a>
-      <h1 id="headertext">BRÖLLOP</h1>
-      <h1 id="paket">Paket 1: <span> 3000kr</span></h1>
-      <h1 id="subpaket">1 Timme</h1>
-      <h1 id="paket">Paket 2: <span> 7000kr</span></h1>
-      <h1 id="subpaket">3 Timmar</h1>
-      <h1 id="paket">Paket 3: <span> 12000kr</span></h1>
-      <h1 id="subpaket">Heldag</h1>
-      <h1 id="merpaket">Fotograferande av svensexa ingår i paket 2 & 3</h1>
-    </div>
-    <div id="square3">
-      <a href="tjänster"
-        ><img id="arrow" src="img/arrow-up-circle.svg" alt=""
-      /></a>
-      <h1 id="headertext">FAMILJ</h1>
-      <h1 id="paket">Paket 1: <span> 699kr</span></h1>
-      <h1 id="subpaket">3 Digitala Bilder</h1>
-      <h1 id="paket">Paket 2: <span> 999kr</span></h1>
-      <h1 id="subpaket">5 Digitala Bilder</h1>
-      <h1 id="paket">Paket 3: <span>1299kr</span></h1>
-      <h1 id="subpaket">7 Digitala Bilder</h1>
-      <h1 id="merpaket">
-        Vill du lägga till bilder på ditt paket? Det kostar 200kr/bild.
-      </h1>
-    </div>
-    <div id="img-container">
-      <a onclick="myFunction()" href="#"
-        ><img src="img/website/porträtt.png" alt=""
-      /></a>
-      <a onclick="myFunction1()" href="#"
-        ><img src="img/website/bröllop.png" alt=""
-      /></a>
-      <a onclick="myFunction2()" href="#"
-        ><img src="img/website/familj.png" alt=""
-      /></a>
+    <a href="">
+      <h1 class="news">NYHETER!</h1>
+    </a>
+    <h1 class="logotext">SEBASTIAN BERG</h1>
+
+    <div class="image-container">
+      <img class="work" src="img/loggor/Clean And Sweep AB.png" alt="" />
+      <img class="work" src="img/loggor/region_varmland_white.png" alt="" />
+      <img class="work" src="img/loggor/SVFM.png" alt="" />
+      <img
+        class="work"
+        src="img/loggor/ung_företagssamhet_logga_white.png"
+        alt=""
+      />
+      <img class="work" src="img/loggor/Lager 3.png" alt="" />
+      <img
+        class="work"
+        src="img/loggor/maxi_karlstad_bergvik_cutout_white.png"
+        alt=""
+      />
     </div>
 
-    <script src="js/script.js"></script>
+    <p class="secondarytext">
+      Hängiven fotograf som strävar efter utveckling. Tillsammans med mina
+      trogna kunder skapar jag material inom foto och film till stora delar av
+      landet.
+    </p>
+
+    <script src="js/tjänster.js"></script>
+
+    <section class="card-area">
+      <h1 class="services">TJÄNSTER</h1>
+      <div class="card-container">
+        <div onmouseover="hoverInfo2()" onmouseout="hoverInfo1()" class="card1">
+          <div id="card-info-hover">
+            <img
+              class="card-image-hover"
+              src="img/website/porträtt.png"
+              alt=""
+            />
+            <h1 class="card-text-main-hover">PRISER</h1>
+            <h1 class="card-text-price-hover">Paket 1: 499kr</h1>
+            <h1 class="card-text-include-hover">3 Digitala Bilder</h1>
+            <h1 class="card-text-price-hover">Paket 2: 799kr</h1>
+            <h1 class="card-text-include-hover">5 Digitala Bilder</h1>
+            <h1 class="card-text-price-hover">Paket 3: 1099kr</h1>
+            <h1 class="card-text-include-hover">7 Digitala Bilder</h1>
+            <h1 class="card-text-addon-hover">
+              Vill du lägga till bilder på ditt paket? Det kostar 200kr/bild.
+            </h1>
+          </div>
+          <div id="card-info">
+            <img class="card-image" src="img/website/porträtt.png" alt="" />
+            <h1 class="card-text-main">PORTRÄTT</h1>
+            <p class="card-text-second">
+              Denna tjänsten är till för dig som behöver nya bilder på barnen
+              eller släkten!
+            </p>
+          </div>
+        </div>
+        <div onmouseover="hoverInfo4()" onmouseout="hoverInfo3()" class="card2">
+          <div id="card-info-hover2">
+            <img
+              class="card-image-hover"
+              src="img/website/bröllop.png"
+              alt=""
+            />
+            <h1 class="card-text-main-hover">PRISER</h1>
+            <h1 class="card-text-price-hover">Paket 1: 499kr</h1>
+            <h1 class="card-text-include-hover">3 Digitala Bilder</h1>
+            <h1 class="card-text-price-hover">Paket 2: 799kr</h1>
+            <h1 class="card-text-include-hover">5 Digitala Bilder</h1>
+            <h1 class="card-text-price-hover">Paket 3: 1099kr</h1>
+            <h1 class="card-text-include-hover">7 Digitala Bilder</h1>
+            <h1 class="card-text-addon-hover">
+              Vill du lägga till bilder på ditt paket? Det kostar 200kr/bild.
+            </h1>
+          </div>
+          <div id="card-info2">
+            <img class="card-image" src="img/website/bröllop.png  " alt="" />
+            <h1 class="card-text-main">BRÖLLOP</h1>
+            <p class="card-text-second">
+              Denna tjänsten är till för dig som behöver nya bilder på barnen
+              eller släkten!
+            </p>
+          </div>
+        </div>
+        <div onmouseover="hoverInfo6()" onmouseout="hoverInfo5()" class="card3">
+          <div id="card-info-hover3">
+            <img
+              class="card-image-hover"
+              src="img/website/familj.png"
+              alt=""
+            />
+            <h1 class="card-text-main-hover">PRISER</h1>
+            <h1 class="card-text-price-hover">Paket 1: 499kr</h1>
+            <h1 class="card-text-include-hover">3 Digitala Bilder</h1>
+            <h1 class="card-text-price-hover">Paket 2: 799kr</h1>
+            <h1 class="card-text-include-hover">5 Digitala Bilder</h1>
+            <h1 class="card-text-price-hover">Paket 3: 1099kr</h1>
+            <h1 class="card-text-include-hover">7 Digitala Bilder</h1>
+            <h1 class="card-text-addon-hover">
+              Vill du lägga till bilder på ditt paket? Det kostar 200kr/bild.
+            </h1>
+          </div>
+          <div id="card-info3">
+            <img class="card-image" src="img/website/familj.png" alt="" />
+            <h1 class="card-text-main">FAMILJ</h1>
+            <p class="card-text-second">
+              Denna tjänsten är till för dig som behöver nya bilder på barnen
+              eller släkten!
+            </p>
+          </div>
+        </div>
+     
+    </section>
   </body>
 </html>
