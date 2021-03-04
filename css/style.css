@@ -220,6 +220,7 @@ body {
 }
 
 .news {
+  display: none;
   position: absolute;
   right: 5rem;
   text-align: center;
