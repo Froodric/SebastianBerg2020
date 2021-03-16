@@ -1,0 +1,42 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  color: white;
+}
+
+body {
+  background-color: rgb(15, 15, 15);
+}
+
+.container {
+  position: relative;
+  top: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  position: relative;
+  top: 350px;
+  text-align: center;
+}
+
+h1 a {
+  background-clip: text;
+  color: rgb(216, 62, 62);
+  text-decoration: none;
+}
+
+.subtext {
+  padding-top: 5px;
+  font-size: 1.5rem;
+}
+
+.logo {
+  width: 200px;
+  height: 200px;
+  z-index: 5;
+}
